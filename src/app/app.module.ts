@@ -4,9 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { UtilisateurComponent } from './composants/utilisateur/utilisateur.component';
 import { DonneesService } from './services/donnees.service';
-
 import { AppareilComponent } from './appareil/appareil.component';
-
 import { FormsModule } from '@angular/forms';
 
 

@@ -6,8 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Yo';
+  title = 'Lucien';
   isAuth = false;
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'éteint'
+    },
+    {
+      name: 'Frigo',
+      status: 'éteint'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'allumé'
+    }
+  ];
+
   constructor() {
     setTimeout(
       () => {
@@ -15,7 +30,17 @@ export class AppComponent {
       }, 4000
     );
   }
+
   onAllumer() {
     console.log('On allume tout !');
+    for(let i=0;i<this.appareils.length;i++){
+      this.appareils[i].status='allumé';
+    }
+  }
+  onEteindre() {
+    console.log('On allume tout !');
+    for(let i=0;i<this.appareils.length;i++){
+      this.appareils[i].status='éteint';
+    }
   }
 }
