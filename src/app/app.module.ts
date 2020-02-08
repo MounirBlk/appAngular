@@ -5,13 +5,16 @@ import { AppComponent } from './app.component';
 import { UtilisateurComponent } from './composants/utilisateur/utilisateur.component';
 import { DonneesService } from './services/donnees.service';
 
-import { FormsModule } from '@angular/forms';
 import { AppareilComponent } from './appareil/appareil.component';
+
+import { FormsModule } from '@angular/forms';
+
+
 @NgModule({
   declarations: [
     AppComponent,
-    UtilisateurComponent,
     AppareilComponent,
+    UtilisateurComponent
   ],
   imports: [
     BrowserModule,

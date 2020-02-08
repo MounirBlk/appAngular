@@ -4,5 +4,18 @@
         <strong>Welcome to {{ title }} !</strong>
     </h1>
 </div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h2>Mes appareils</h2>
+            <ul class="list-group">
+                <app-appareil></app-appareil>
+                <app-appareil></app-appareil>
+                <app-appareil></app-appareil>
+            </ul>
+            <button class="btn btn-info" [disabled]="!isAuth" (click)="onAllumer()">Tout allumer</button>
+        </div>
+    </div>
+</div>
 
 <!--<app-utilisateur></app-utilisateur>-->
